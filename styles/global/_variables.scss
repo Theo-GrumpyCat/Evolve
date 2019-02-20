@@ -1,13 +1,77 @@
+/* FONT FAMILY */
 $font-serif: 'Times', 'Times new roman', serif;
 $font-ss: 'Arial', 'Helvetica', sans-serif;
+$ralewayFont: 'Raleway';
 
-//color
-$mainColor: #4D7FD5;
-$secondaryColor: #4D61D6;
-$ultraColor: #927EEC;
+/* FONT WEIGHT */
 
-//breakpoint
+// THIN
+$ralewayThin: 100;
+$ralewayThinItalic: 100i;
+
+// EXTRA LIGHT
+$ralewayExtra-light: 200;
+$ralewayExtra-lightItalic: 200i;
+
+// LIGHT
+$ralewayLight: 300;
+$ralewayLightItalic: 300i;
+
+// REGULAR
+$ralewayRegular: 400;
+$ralewayRegularItalic: 400i;
+
+// MEDIUM
+$ralewayMedium: 500;
+$ralewayMediumItalic: 500i;
+
+// SEMI BOLD
+$ralewaySemi-bold: 600;
+$ralewaySemi-boldItalic: 600i;
+
+// BOLD
+$ralewayBold: 700;
+$ralewayBoldItalic: 700i;
+
+// EXTRA BOLD
+$ralewayExtra-bold: 800;
+$ralewayExtra-boldItalic: 800i;
+
+// BLACK
+$ralewayBlack: 900;
+$ralewayBlackItalic: 900i;
+
+/* FONT SIZE */
+
+$Size-90px: 4.5rem;
+$Size-70px: 3.5rem;
+$Size-22px: 1.1rem;
+$Size-16px: 0.8rem;
+$Size-12px: 0.6rem;
+$Size-10px: 0.5rem;
+$Size-9px: 0.45rem;
+$Size-8px: 0.40rem;
+$Size-7px: 0.35rem;
+
+/* LINE HEIGHT */
+$letter-spacing-100: 1px;
+$Letter-spacing-150: 1.5px;
+$Letter-spacing-subTitle: 0.5em;
+
+/* COLOR */
+
+$whiteBasic: #ffffff;
+$blackBasic: #000000;
+$pinkEvolve: #e61753;
+$greyBasic: #c3c3c3;
+$greyEvolve: #989898;
+/* BREAKPOINT */
+
 $bp-tablet: 600px;
 $bp-desktop: 949px;
 $bp-desktop-large: 1200px;
 $bp-desktop-x-large: 1800px;
+
+/* ANIMATIONS */
+
+$animateMenu: all 0.2s ease-in-out;

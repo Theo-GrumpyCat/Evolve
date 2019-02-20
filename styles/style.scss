@@ -1,5 +1,9 @@
+@import './mixins/forsize';
 @import './global/reset';
 @import './global/variables';
 @import './global/page';
-@import './mixins/forsize';
-@import './components/header';
+
+@import './components/menu';
+@import './components/footer';
+@import './components/slider';
+@import './components/header-section';

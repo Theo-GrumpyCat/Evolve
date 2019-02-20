@@ -1,0 +1,47 @@
+div#menu {
+    position: fixed;
+    display: flex;
+    top: 0;
+    // width: 100vw;
+    width: 90vw;
+    margin: 0 3vw;
+    justify-content: space-between;
+    z-index: 9999;
+    font-size: 1rem;
+    color: $blackBasic;
+    padding: 3vh 0 0 0;
+    .menuList {
+        padding: 0;
+        margin: 0 2vh;
+        &__link {
+            text-decoration: none;
+            color: $blackBasic;
+            margin-left: 2.5vw;
+        }
+        &__item {
+            list-style: none;
+            display: inline;
+            text-transform: uppercase;
+            letter-spacing: $Letter-spacing-150;
+            position: relative;
+            font: {
+                family: $ralewayFont;
+                weight: $ralewayExtra-bold;
+                size: $Size-9px;
+            }
+            &::after, &:visited:after {
+                content: '';
+                height: 2px;
+                position: absolute;
+                top: 15px;
+                left: 0;
+                width: 0%;
+                background: $pinkEvolve;
+                transition: 0.3s;
+            }
+            &:hover:after, &:visited:hover:after {
+                width: 100%;
+            }
+        }
+    }
+}

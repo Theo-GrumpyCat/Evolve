@@ -1,0 +1,35 @@
+div#slider {
+    position: fixed;
+    bottom: 15vh;
+    right: 0;
+    margin: 0 5vw;
+    display: inline-flex;
+    text-align: right;
+    z-index: 9999;
+    color: $blackBasic;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    img {
+        cursor: pointer;
+        position: relative;
+        bottom: 0.3vh;
+        &:first-child {
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);   
+        }
+        &:last-child {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);   
+        }
+    }
+    p {
+        margin: 0 1vw;
+        text-transform: uppercase;
+        letter-spacing: $Letter-spacing-150;
+        font: {
+            family: $ralewayFont;
+            weight: $ralewayMedium;
+            size: $Size-8px;
+        }
+    }
+}

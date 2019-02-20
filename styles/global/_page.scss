@@ -1,62 +1,18 @@
-div {
-    font-size: 100px;
+html {
+    font-size: 100%;
+    // 1rem = 20px / 1em =          20px
+    // 0.5rem = 10px / 0.5em =      10px
+    // 0.05rem = 1px / 0.05em =      1px
+    
+    /* CALCUL FONT SIZE */
+    // (Size_souhaité_px * 1) / 20 = Size_souhaité_rem
+}
+div#fullpage {
     text-align: center;
-}
-
-div#menu {
-position: fixed;
-display: flex;
-top: 0;
-width: 100vw;
-justify-content: space-between;
-z-index: 9999;
-font-size: 25px;
-color: black;
-padding: 20px 0 0 0;
-}
-
-div#footer {
-position: fixed;
-bottom: 0;
-height: 50px;
-display: block;
-text-align: left;
-z-index: 9999;
-font-size: 25px;
-color: black;
-padding: 20px 0 0 0;
-}
-
-div#slider {
-position: fixed;
-bottom: 40px;
-right: 0;
-display: block;
-text-align: right;
-z-index: 9999;
-font-size: 25px;
-color: black;
-padding: 20px 0 0 0;
-transform: rotate(-90deg);
-}
-
-#menu img {
-margin-left: 50px;
-}
-
-#menu ul {
-padding: 0;
-margin: 0;
-margin-right: 50px;
-}
-
-#menu ul>a {
-text-decoration: none;
-color: black;
-padding: 0 10px;
-}
-
-#menu li {
-list-style: none;
-display: inline;
+    .inner {
+        width: 80vw;
+        margin: 0 auto;    
+        max-width: 1350px;
+        position: relative;
+    }
 }

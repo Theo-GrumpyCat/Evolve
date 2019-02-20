@@ -1,0 +1,38 @@
+div#footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    text-align: left;
+    z-index: 9999;
+    margin: 0 3vw;
+    color: $blackBasic;
+    padding: 3vh 0;
+    letter-spacing: $letter-spacing-100;
+    font: {
+        family: $ralewayFont;
+        weight: $ralewayLight;
+        size: $Size-7px;
+    }
+    & span {
+        font-weight: $ralewaySemi-bold;
+    }
+    .footer-link {
+        text-decoration: none;
+        color: inherit;
+        margin: 0 0.4vw;
+        position: relative;
+        &::after, &:visited:after {
+            content: '';
+            height: 1px;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 0%;
+            background: $greyBasic;
+            transition: 0.3s;
+        }
+        &:hover:after, &:visited:hover:after {
+            width: 100%;
+        }
+    }
+}
